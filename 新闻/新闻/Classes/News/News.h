@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  News.h
 //  新闻
 //
 //  Created by 王莹 on 15/6/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface News : UITableViewController
 
 @end
-
