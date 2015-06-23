@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6B37CC05F0E44A96E07A7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABBFBE599FE05E2AC179DFA /* libPods.a */; };
 		B23A28411B39BB030000FDA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A28401B39BB030000FDA6 /* main.m */; };
-		B23A28441B39BB030000FDA6 /* AppDelegate.m Sources */ = {isa = PBXBuildFile; fileRef = B23A28431B39BB030000FDA6 /* AppDelegate.m */; };
+		B23A28441B39BB030000FDA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A28431B39BB030000FDA6 /* AppDelegate.m */; };
 		B23A284C1B39BB030000FDA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23A284B1B39BB030000FDA6 /* Images.xcassets */; };
 		B23A284F1B39BB030000FDA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23A284D1B39BB030000FDA6 /* LaunchScreen.xib */; };
 		B23A285B1B39BB030000FDA6 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A285A1B39BB030000FDA6 /* __Tests.m */; };
 		B23A28681B39BC3B0000FDA6 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23A28671B39BC3B0000FDA6 /* News.storyboard */; };
 		B23A286B1B39BC5A0000FDA6 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = B23A286A1B39BC5A0000FDA6 /* News.m */; };
+		B23DB7BA1B3A196B0089338A /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B23DB7B91B3A196B0089338A /* NetworkTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A6B405EAD5323078C9203BB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5ABBFBE599FE05E2AC179DFA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A283B1B39BB030000FDA6 /* 新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B23A283F1B39BB030000FDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B23A28401B39BB030000FDA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		B23A28671B39BC3B0000FDA6 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		B23A28691B39BC5A0000FDA6 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		B23A286A1B39BC5A0000FDA6 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		B23DB7B81B3A196B0089338A /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
+		B23DB7B91B3A196B0089338A /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		BD8ABCD911D7569258D8CE21 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6B37CC05F0E44A96E07A7B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AB8F231E1AD63F019DFD4BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ABBFBE599FE05E2AC179DFA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74BC94321D252431A7DBDBD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B405EAD5323078C9203BB /* Pods.debug.xcconfig */,
+				BD8ABCD911D7569258D8CE21 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B23A28321B39BB030000FDA6 = {
 			isa = PBXGroup;
 			children = (
 				B23A283D1B39BB030000FDA6 /* 新闻 */,
 				B23A28571B39BB030000FDA6 /* 新闻Tests */,
 				B23A283C1B39BB030000FDA6 /* Products */,
+				74BC94321D252431A7DBDBD9 /* Pods */,
+				6AB8F231E1AD63F019DFD4BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +166,8 @@
 		B23A28661B39BC220000FDA6 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				B23DB7B81B3A196B0089338A /* NetworkTools.h */,
+				B23DB7B91B3A196B0089338A /* NetworkTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -150,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B23A285E1B39BB030000FDA6 /* Build configuration list for PBXNativeTarget "新闻" */;
 			buildPhases = (
+				B37B25EF6508D7B2F6EA73E4 /* Check Pods Manifest.lock */,
 				B23A28371B39BB030000FDA6 /* Sources */,
 				B23A28381B39BB030000FDA6 /* Frameworks */,
 				B23A28391B39BB030000FDA6 /* Resources */,
+				910EB79C95C47A91F3467D5D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,11 +269,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		910EB79C95C47A91F3467D5D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B37B25EF6508D7B2F6EA73E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B23A28371B39BB030000FDA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23DB7BA1B3A196B0089338A /* NetworkTools.m in Sources */,
 				B23A28441B39BB030000FDA6 /* AppDelegate.m in Sources */,
 				B23A28411B39BB030000FDA6 /* main.m in Sources */,
 				B23A286B1B39BC5A0000FDA6 /* News.m in Sources */,
@@ -361,6 +426,7 @@
 		};
 		B23A285F1B39BB030000FDA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6B405EAD5323078C9203BB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "新闻/Info.plist";
@@ -371,6 +437,7 @@
 		};
 		B23A28601B39BB030000FDA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD8ABCD911D7569258D8CE21 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "新闻/Info.plist";
@@ -432,6 +499,7 @@
 				B23A28601B39BB030000FDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B23A28611B39BB030000FDA6 /* Build configuration list for PBXNativeTarget "新闻Tests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +508,7 @@
 				B23A28631B39BB030000FDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
